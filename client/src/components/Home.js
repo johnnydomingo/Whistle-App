@@ -4,8 +4,20 @@ import { Route, Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div>
-      <h1>Welcome to Whistle!</h1>
-      <article>Create a form or something to engage with user</article>
+      <div>
+        <h1>Welcome to Whistle!</h1>
+        </div> 
+      <form>
+        <label htmlFor='username'></label>
+        <input
+          type='text'
+          name='username'
+          placeholder='Enter a username'
+          
+
+        />
+      </form>
+
     </div>
   )
 }

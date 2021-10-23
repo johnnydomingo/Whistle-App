@@ -1,18 +1,13 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
+const Feed = ({ whistle }) => {
 
-
-const Feed = ({ whistleData }) => {
-  
-
-
-  
   return (
     <div>
-      <h4>{whistleData?.fields.username}</h4>
-      <p>{whistleData?.fields.post}</p>
-      <p>{whistleData?.fields.date}</p>
+      <h4>{whistle?.fields.username}</h4>
+      <p>{whistle?.fields.post}</p>
+      <p>{whistle?.fields.date}</p>
     </div>
     
   )

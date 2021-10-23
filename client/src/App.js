@@ -42,7 +42,7 @@ function App() {
           {whistles.map((whistle) => (
             <Feed
               key={whistle.id}
-              whistleData={whistle}
+              whistle={whistle}
               toggleFetch={toggleFetch}
               setToggleFetch={setToggleFetch}
             />
