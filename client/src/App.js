@@ -6,6 +6,7 @@ import Home from './components/Home.js';
 import About from './components/About.js';
 import Nav from './components/Nav.js';
 import Form from './components/Form.js';
+import Footer from './components/Footer.js';
 import './App.css';
 
 
@@ -30,11 +31,6 @@ function App() {
     return (
       <div>
         <Nav />
-        {/* <nav>
-        <Link to='/home'>Whistle!</Link>
-        <Link to='/feed'>Feed</Link>
-        <Link to='/about'>About</Link>
-        </nav> */}
         <hr />
         <Route path='/home' exact>
           <Home />
