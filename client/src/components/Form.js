@@ -6,9 +6,7 @@ const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Table%201?api_key
 
 const Form = ({ toggleFetch, setToggleFetch}) => {
   const [post, setPost] = useState();
-  // const [redirectFeed, setRedirectFeed] = useState(false);
-  // const [username, setUsername] = ('');
-
+  
   const handlePostRequest = async (ev) => {
     ev.preventDefault();
     
@@ -19,10 +17,7 @@ const Form = ({ toggleFetch, setToggleFetch}) => {
         }
       }]
     }
-
-    
     console.log(newWhistle);
-
     await axios.post(API_URL, newWhistle);
     setToggleFetch(!toggleFetch);
     // setRedirectFeed(true);
@@ -33,7 +28,12 @@ const Form = ({ toggleFetch, setToggleFetch}) => {
   return (
     <div>
         <form onSubmit={handlePostRequest}>
-        <textarea type='text' id='post' placeholder='Share something...' onChange={(ev) => setPost(ev.target.value)} />
+        <textarea
+          type='text'
+          id='post'
+          placeholder='Share something...'
+          onChange={(ev) => setPost(ev.target.value)}
+        />
         <button type='submit'>Whistle</button>
         </form>
     </div>
