@@ -7,7 +7,7 @@ function App() {
       <nav>
       <h1>Whistle!</h1>
       </nav>
-      <Home />
+      {/* <Home /> */}
     </div>
   );
 }
