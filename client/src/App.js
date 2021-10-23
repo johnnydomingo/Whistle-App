@@ -47,8 +47,13 @@ function App() {
               setToggleFetch={setToggleFetch}
             />
           ))}
-          <Form />
+          <Form
+            formType={'post'}
+            toggleFetch={toggleFetch}
+            setToggleFetch={setToggleFetch}
+          />
         </Route>
+        <Footer />
       </div>
     );
 }
