@@ -1,9 +1,13 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import Feed from './components/Feed.js';
 import Home from './components/Home.js';
+import About from './components/About.js';
+import Nav from './components/Nav.js';
+import Form from './components/Form.js';
 import './App.css';
+
 
 const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Table%201?api_key=keyjukEQxfYibCtcU';
 
@@ -25,8 +29,19 @@ function App() {
   
     return (
       <div>
-        <Home />
-
+        <Nav />
+        {/* <nav>
+        <Link to='/home'>Whistle!</Link>
+        <Link to='/feed'>Feed</Link>
+        <Link to='/about'>About</Link>
+        </nav> */}
+        <hr />
+        <Route path='/home' exact>
+          <Home />
+        </Route>
+        <Route path='/about' exact>
+          <About />
+        </Route>
         <Route path='/feed'>
           {whistles.map((whistle) => (
             <Feed
@@ -36,6 +51,7 @@ function App() {
               setToggleFetch={setToggleFetch}
             />
           ))}
+          <Form />
         </Route>
       </div>
     );
