@@ -22,7 +22,7 @@ const NewPost = ({ toggleFetch, setToggleFetch}) => {
         }
       }]
     }
-    console.log(newWhistle);
+    // console.log(newWhistle);
     await axios.post(API_URL, newWhistle);
     setToggleFetch(!toggleFetch);
     // setRedirectFeed(true);

@@ -28,8 +28,13 @@ function App() {
   }, [toggleFetch]);
 
 
-  document.title = "Whistle!";
+document.title = "Whistle!";
   
+  whistles.sort(function (a, b) {
+    let time1 = new Date(a.createdTime);
+    let time2 = new Date(b.createdTime);
+      return time1 - time2;
+});
   return (
   
       <div>
