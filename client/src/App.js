@@ -17,6 +17,7 @@ const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Whistles?api_key=
 
 function App() {
   const [whistles, setWhistles] = useState([]);
+  const [currentUser, setCurrentUser] = useState('');
   const [toggleFetch, setToggleFetch] = useState(true);
 
   useEffect(() => {
@@ -46,6 +47,7 @@ document.title = "Whistle!";
         <hr />
         <Route path='/home' exact>
         <Home
+          currentUser={currentUser}
           toggleFetch={toggleFetch}
           setToggleFetch={setToggleFetch}
         />

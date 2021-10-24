@@ -4,9 +4,8 @@ import { useState } from 'react';
 
 const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Users?api_key=keyjukEQxfYibCtcU';
 
-const Home = ({toggleFetch, setToggleFetch}) => {
+const Home = ({ currentUser, toggleFetch, setToggleFetch}) => {
   const [user, setUser] = useState('');
-  const [currentUser, setCurrentUser] = useState('');
   const handleSubmit = async (ev) => {
     ev.preventDefault();
 
@@ -35,9 +34,9 @@ const Home = ({toggleFetch, setToggleFetch}) => {
           placeholder='Enter a username'
           onChange={(ev) => setUser(ev.target.value)}
         />
-        <Link to='/feed' exact> 
+        {/* <Link to='/feed'>  */}
         <button type='submit'>Submit</button>
-        </Link> 
+        {/* </Link>  */}
       </form> 
 
     </div>
