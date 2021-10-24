@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Redirect } from 'react-router-dom';
 
-const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Table%201?api_key=keyjukEQxfYibCtcU';
+import { Redirect, useParams } from 'react-router-dom';
+
+const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Whistles?api_key=keyjukEQxfYibCtcU';
 
 const NewPost = ({ toggleFetch, setToggleFetch}) => {
   const [post, setPost] = useState('');
@@ -14,11 +14,13 @@ const NewPost = ({ toggleFetch, setToggleFetch}) => {
   const handlePostRequest = async (ev) => {
     ev.preventDefault();
     
+    
     const newWhistle = {
-      records: [{
-        fields: {
-          username,
-          post
+      'records': [{
+        
+        'fields': {
+          'username': username,
+          'post': post
         }
       }]
     }
@@ -35,12 +37,13 @@ const NewPost = ({ toggleFetch, setToggleFetch}) => {
     <div>
       
       <form onSubmit={handlePostRequest}>
-        <label htmlFor='username'/>
+        <label htmlFor='username' />
+        <input type='text' placeholder='Username' onChange={(ev) => setUsername(ev.target.value)}/>
         <textarea
           id='post'
           type='textbox'
-          data-emoji-input='unicode'
-          data-emojiable='true'
+          // data-emoji-input='unicode'
+          // data-emojiable='true'
           placeholder='Share something...'
           onChange={(ev) => setPost(ev.target.value)}
         ></textarea>

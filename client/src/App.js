@@ -13,7 +13,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import './App.css';
 
 
-const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Table%201?api_key=keyjukEQxfYibCtcU';
+const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Whistles?api_key=keyjukEQxfYibCtcU';
 
 function App() {
   const [whistles, setWhistles] = useState([]);
@@ -34,12 +34,10 @@ document.title = "Whistle!";
   whistles.sort(function (a, b) {
     let time1 = new Date(a.createdTime);
     let time2 = new Date(b.createdTime);
-    return time1 - time2;
+    return time2 - time1;
     
   });
   
-  // whistles.unshift();
-  // return whistles;
   
   return (
   
@@ -47,7 +45,10 @@ document.title = "Whistle!";
         <Nav />
         <hr />
         <Route path='/home' exact>
-          <Home />
+        <Home
+          toggleFetch={toggleFetch}
+          setToggleFetch={setToggleFetch}
+        />
         </Route>
         <Route path='/about' exact>
           <About />

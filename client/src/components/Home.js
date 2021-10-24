@@ -2,26 +2,24 @@ import { Route, Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
 
-const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Table%201?api_key=keyjukEQxfYibCtcU';
+const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Users?api_key=keyjukEQxfYibCtcU';
 
 const Home = ({toggleFetch, setToggleFetch}) => {
-  const [username, setUsername] = useState('');
-
+  const [user, setUser] = useState('');
+  const [currentUser, setCurrentUser] = useState('');
   const handleSubmit = async (ev) => {
     ev.preventDefault();
 
     const newUsername = {
-      records: [{
-        fields: {
-          username
+      'records': [{
+        'fields': {
+          'username': user
         }
       }]
     }
     await axios.post(API_URL, newUsername);
     setToggleFetch(!toggleFetch);
   }
-
-
 
 
   return (
@@ -33,14 +31,14 @@ const Home = ({toggleFetch, setToggleFetch}) => {
       <form onSubmit={handleSubmit}>
         <label htmlFor='username'></label>
         <input
-          value={username}
+          value={user}
           placeholder='Enter a username'
-          onChange={(ev) => setUsername(ev.target.value)}
+          onChange={(ev) => setUser(ev.target.value)}
         />
-        {/* <Link to='/feed' exact> */}
+        <Link to='/feed' exact> 
         <button type='submit'>Submit</button>
-        {/* </Link> */}
-      </form>
+        </Link> 
+      </form> 
 
     </div>
   )
