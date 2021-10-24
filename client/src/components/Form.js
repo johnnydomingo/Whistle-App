@@ -6,6 +6,10 @@ const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Table%201?api_key
 
 const Form = ({ toggleFetch, setToggleFetch}) => {
   const [post, setPost] = useState();
+
+
+
+
   
   const handlePostRequest = async (ev) => {
     ev.preventDefault();
@@ -25,15 +29,17 @@ const Form = ({ toggleFetch, setToggleFetch}) => {
   // if (redirectFeed) {
   //     return <Redirect to='/feed'/>
   //   }
+  
   return (
     <div>
         <form onSubmit={handlePostRequest}>
         <textarea
-          type='text'
-          id='post'
+          type='textbox'
+          data-emoji-input='unicode'
+          data-emojiable='true'
           placeholder='Share something...'
           onChange={(ev) => setPost(ev.target.value)}
-        />
+        ></textarea>
         <button type='submit'>Whistle</button>
         </form>
     </div>

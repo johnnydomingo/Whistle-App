@@ -37,9 +37,9 @@ const Home = ({toggleFetch, setToggleFetch}) => {
           placeholder='Enter a username'
           onChange={(ev) => setUsername(ev.target.value)}
         />
-        <Link to='/feed' exact>
+        {/* <Link to='/feed' exact> */}
         <button type='submit'>Submit</button>
-        </Link>
+        {/* </Link> */}
       </form>
 
     </div>

@@ -7,6 +7,7 @@ import About from './components/About.js';
 import Nav from './components/Nav.js';
 import Form from './components/Form.js';
 import Footer from './components/Footer.js';
+import Whistle from './components/Whistle.js';
 import './App.css';
 
 
@@ -53,6 +54,7 @@ function App() {
             setToggleFetch={setToggleFetch}
           />
         </Route>
+        
         <Footer />
       </div>
     );
