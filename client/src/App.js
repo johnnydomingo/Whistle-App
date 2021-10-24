@@ -7,6 +7,7 @@ import About from './components/About.js';
 import Nav from './components/Nav.js';
 import NewPost from './components/NewPost.js';
 import Footer from './components/Footer.js';
+import './Home.css';
 import { ChakraProvider } from '@chakra-ui/react';
 
 import './App.css';
@@ -33,8 +34,13 @@ document.title = "Whistle!";
   whistles.sort(function (a, b) {
     let time1 = new Date(a.createdTime);
     let time2 = new Date(b.createdTime);
-      return time1 - time2;
-});
+    return time1 - time2;
+    
+  });
+  
+  // whistles.unshift();
+  // return whistles;
+  
   return (
   
       <div>
