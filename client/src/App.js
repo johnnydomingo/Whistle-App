@@ -7,7 +7,8 @@ import About from './components/About.js';
 import Nav from './components/Nav.js';
 import NewPost from './components/NewPost.js';
 import Footer from './components/Footer.js';
-import Whistle from './components/Whistle.js';
+import { ChakraProvider } from '@chakra-ui/react';
+
 import './App.css';
 
 
@@ -29,7 +30,8 @@ function App() {
 
   document.title = "Whistle!";
   
-    return (
+  return (
+  
       <div>
         <Nav />
         <hr />

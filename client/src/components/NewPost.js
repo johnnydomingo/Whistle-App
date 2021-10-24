@@ -44,7 +44,7 @@ const NewPost = ({ toggleFetch, setToggleFetch}) => {
           placeholder='Share something...'
           onChange={(ev) => setPost(ev.target.value)}
         ></textarea>
-        <button type='submit'>Whistle</button>
+        <input type='submit' />
         </form>
         
     </div>
