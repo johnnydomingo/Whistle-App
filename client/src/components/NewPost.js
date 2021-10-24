@@ -1,14 +1,14 @@
 import axios from 'axios';
 import { useState } from 'react';
-// import { Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Table%201?api_key=keyjukEQxfYibCtcU';
 
-const Form = ({ toggleFetch, setToggleFetch}) => {
-  const [post, setPost] = useState();
-
-
-
+const NewPost = ({ toggleFetch, setToggleFetch}) => {
+  const [post, setPost] = useState('');
+  const [username, setUsername] = useState('');
+  // const [redirectFeed, setRedirectFeed] = useState(false);
 
   
   const handlePostRequest = async (ev) => {
@@ -17,6 +17,7 @@ const Form = ({ toggleFetch, setToggleFetch}) => {
     const newWhistle = {
       records: [{
         fields: {
+          username,
           post
         }
       }]
@@ -32,8 +33,11 @@ const Form = ({ toggleFetch, setToggleFetch}) => {
   
   return (
     <div>
-        <form onSubmit={handlePostRequest}>
+      
+      <form onSubmit={handlePostRequest}>
+        <label htmlFor='username'/>
         <textarea
+          id='post'
           type='textbox'
           data-emoji-input='unicode'
           data-emojiable='true'
@@ -42,8 +46,9 @@ const Form = ({ toggleFetch, setToggleFetch}) => {
         ></textarea>
         <button type='submit'>Whistle</button>
         </form>
+        
     </div>
   )
 }
 
-export default Form;
+export default NewPost;

@@ -5,7 +5,7 @@ import Feed from './components/Feed.js';
 import Home from './components/Home.js';
 import About from './components/About.js';
 import Nav from './components/Nav.js';
-import Form from './components/Form.js';
+import NewPost from './components/NewPost.js';
 import Footer from './components/Footer.js';
 import Whistle from './components/Whistle.js';
 import './App.css';
@@ -40,21 +40,20 @@ function App() {
           <About />
         </Route>
         <Route path='/feed'>
-          {whistles.map((whistle) => (
-            <Feed
-              key={whistle.id}
-              whistle={whistle}
-              toggleFetch={toggleFetch}
-              setToggleFetch={setToggleFetch}
-            />
-          ))}
-          <Form
+        <NewPost
             formType={'post'}
             toggleFetch={toggleFetch}
             setToggleFetch={setToggleFetch}
           />
-        </Route>
-        
+          {whistles.map((whistle) => (
+            <Feed
+              key={whistle.id}
+              whistleData={whistle}
+              toggleFetch={toggleFetch}
+              setToggleFetch={setToggleFetch}
+            />
+          ))}
+          </Route>
         <Footer />
       </div>
     );
