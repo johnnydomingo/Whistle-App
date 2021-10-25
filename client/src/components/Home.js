@@ -1,6 +1,7 @@
 import { Route, Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
+import Button from '@mui/material/Button';
 
 const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Users?api_key=keyjukEQxfYibCtcU';
 
@@ -40,7 +41,7 @@ const Home = ({ props, toggleFetch, setToggleFetch}) => {
           onChange={(ev) => setUser(ev.target.value)}
         />
         {/* <Link to='/feed'>  */}
-        <button type='submit'>Submit</button>
+        <Button varient='contained' type='submit'>Submit</Button>
         {/* </Link>  */}
       </form> 
 
