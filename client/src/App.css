@@ -1,4 +1,37 @@
-nav {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: skyblue;
+}
+.brand-name {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+.links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.links li {
+  list-style: none;
+}
+.links li a {
+  text-decoration: none;
+  color: white;
+  padding: 16px; 
+  display: block;
+}
+.navbar li:hover{
+  background-color: navy;
 }

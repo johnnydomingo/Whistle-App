@@ -45,7 +45,8 @@ const NewPost = ({ props, toggleFetch, setToggleFetch}) => {
         <input type='text' placeholder='Username' onChange={(ev) => setUsername(ev.target.value)}/> */}
           {/* <fieldset> */}
           <TextField
-          style= {{ alignItems: 'center' }}
+          fullWidth
+          style= {{ alignItems: 'center', paddingLeft: '15px', paddingRight: '15px' }}
           id='post'
           type='textbox'
           multiline
@@ -55,8 +56,9 @@ const NewPost = ({ props, toggleFetch, setToggleFetch}) => {
           onChange={(ev) => setPost(ev.target.value)}
           />
 
-            <Button
-              type='submit'>Whistle!
+          <Button
+            
+            type='submit'>Whistle!
             </Button> 
            {/* </fieldset>  */}
         </form>

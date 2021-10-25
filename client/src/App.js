@@ -45,7 +45,7 @@ document.title = "Whistle!";
     
       <div>
         <Nav />
-        <hr />
+        
         <Route path='/home' exact>
         <Home
           currentUser={currentUser}
