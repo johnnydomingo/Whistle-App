@@ -10,12 +10,12 @@ const Feed = ({ whistleData }) => {
 
   return (
     <div>
-      <Box m={2} pt={3} style={{justifyContent: 'center'}}>
-        <Card sx={{ maxWidth: 400 }} style={{backgroundColor: 'skyBlue', textAlign: 'center'}} >
+      <Box m={2} pt={3} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <Card sx={{ minWidth: 400, maxWidth: 400, minHeight: 100 }} style={{backgroundColor: 'skyBlue', textAlign: 'center'}} >
         <CardContent>
-          <Typography sx={{fontSize: 20}} gutterBottom><h4>{whistleData?.fields.username}</h4>
+          <Typography sx={{fontSize: 20}} color='white' gutterBottom><h4>{whistleData?.fields.username}</h4>
           </Typography>
-          <Typography sx={{fontSize: 16}} color='blue'>
+          <Typography sx={{fontSize: 16}} color='white'>
             {whistleData?.fields.post}
           </Typography>
         <p>{whistleData?.fields.createdTime}</p>

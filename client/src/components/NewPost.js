@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
 import { Redirect, useParams } from 'react-router-dom';
 
 const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Whistles?api_key=keyjukEQxfYibCtcU';
@@ -38,11 +39,13 @@ const NewPost = ({ props, toggleFetch, setToggleFetch}) => {
   
   return (
     <div>
-      
+      <Box>
       <form onSubmit={handlePostRequest}>
-        <label htmlFor='username' />
-        <input type='text' placeholder='Username' onChange={(ev) => setUsername(ev.target.value)}/>
-        <TextField
+        {/* <label htmlFor='username' />
+        <input type='text' placeholder='Username' onChange={(ev) => setUsername(ev.target.value)}/> */}
+          {/* <fieldset> */}
+          <TextField
+          style= {{ alignItems: 'center' }}
           id='post'
           type='textbox'
           multiline
@@ -51,9 +54,13 @@ const NewPost = ({ props, toggleFetch, setToggleFetch}) => {
           placeholder='Share something...'
           onChange={(ev) => setPost(ev.target.value)}
           />
-        <Button type='submit'>Whistle!</Button>
+
+            <Button
+              type='submit'>Whistle!
+            </Button> 
+           {/* </fieldset>  */}
         </form>
-        
+        </Box>
     </div>
   )
 }
