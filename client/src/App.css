@@ -13,10 +13,11 @@ body {
   align-items: center;
   color: white;
   background-color: skyblue;
+  padding-bottom: 3px;
 }
 .brand-name {
-  font-size: 1.5rem;
-  margin: .5rem;
+  font-size: 20px;
+  margin: 5px;
 }
 .links ul {
   margin: 0;
@@ -29,26 +30,53 @@ body {
 .links li a {
   text-decoration: none;
   color: white;
-  padding: 16px; 
+  padding: 14px; 
   display: block;
 }
-.navbar li:hover{
+.links li:hover{
   background-color: navy;
 }
 .hamburger {
   position: absolute;
   top: 8px;
-  bottom: 16px;
+  right: 16px;
   display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 20px;
+  height: 21px;
 }
 .hamburger .line {
-  height: 2.5px;
+  height: 3px;
   width: 100%;
   background-color: white;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .hamburger {
+    display: flex;
+  }
+  .links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .links ul {
+    width: 100%;
+    flex-direction: column;
+  
+  }
+  .links li {
+    text-align: center;
+  }
+  .links li a {
+    padding: 5px;
+  }
+  .links.active {
+    display: flex;
+  }
 }
 

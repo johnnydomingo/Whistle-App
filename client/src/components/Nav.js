@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
+  const hamburger = () => {
+    
+  }
+
+
   return (
     <div>
       <nav class='navbar'>
-        <div class='brand-name'>Whistle</div>
+        <div
+          class='brand-name'>Whistle
+        </div>
         <a href='#' class='hamburger'>
           <span class='line'></span>
           <span class='line'></span>
