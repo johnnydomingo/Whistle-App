@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState } from 'react';
-
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 import { Redirect, useParams } from 'react-router-dom';
 
 const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Whistles?api_key=keyjukEQxfYibCtcU';
@@ -41,16 +42,16 @@ const NewPost = ({ props, toggleFetch, setToggleFetch}) => {
       <form onSubmit={handlePostRequest}>
         <label htmlFor='username' />
         <input type='text' placeholder='Username' onChange={(ev) => setUsername(ev.target.value)}/>
-        <textarea
+        <TextField
           id='post'
           type='textbox'
-          // data-emoji-input='unicode'
-          // data-emojiable='true'
+          multiline
+          rows={5}
+          varient='filled'
           placeholder='Share something...'
           onChange={(ev) => setPost(ev.target.value)}
-        ></textarea>
-        
-        <input type='submit' />
+          />
+        <Button type='submit'>Whistle!</Button>
         </form>
         
     </div>
