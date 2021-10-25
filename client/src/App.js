@@ -48,6 +48,7 @@ document.title = "Whistle!";
         <Route path='/home' exact>
         <Home
           currentUser={currentUser}
+          setCurrentUser={setCurrentUser}
           toggleFetch={toggleFetch}
           setToggleFetch={setToggleFetch}
         />

@@ -5,7 +5,7 @@ import { Redirect, useParams } from 'react-router-dom';
 
 const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Whistles?api_key=keyjukEQxfYibCtcU';
 
-const NewPost = ({ toggleFetch, setToggleFetch}) => {
+const NewPost = ({ props, toggleFetch, setToggleFetch}) => {
   const [post, setPost] = useState('');
   const [username, setUsername] = useState('');
   // const [redirectFeed, setRedirectFeed] = useState(false);
@@ -14,6 +14,8 @@ const NewPost = ({ toggleFetch, setToggleFetch}) => {
   const handlePostRequest = async (ev) => {
     ev.preventDefault();
     
+    
+  
     
     const newWhistle = {
       'records': [{
@@ -47,6 +49,7 @@ const NewPost = ({ toggleFetch, setToggleFetch}) => {
           placeholder='Share something...'
           onChange={(ev) => setPost(ev.target.value)}
         ></textarea>
+        
         <input type='submit' />
         </form>
         

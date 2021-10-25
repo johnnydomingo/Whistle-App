@@ -4,10 +4,13 @@ import { useState } from 'react';
 
 const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Users?api_key=keyjukEQxfYibCtcU';
 
-const Home = ({ currentUser, toggleFetch, setToggleFetch}) => {
+const Home = ({ props, toggleFetch, setToggleFetch}) => {
   const [user, setUser] = useState('');
   const handleSubmit = async (ev) => {
     ev.preventDefault();
+    props.setCurrentUser({
+      user
+    });
 
     const newUsername = {
       'records': [{
@@ -17,6 +20,7 @@ const Home = ({ currentUser, toggleFetch, setToggleFetch}) => {
       }]
     }
     await axios.post(API_URL, newUsername);
+    
     setToggleFetch(!toggleFetch);
   }
 
@@ -30,6 +34,7 @@ const Home = ({ currentUser, toggleFetch, setToggleFetch}) => {
       <form onSubmit={handleSubmit}>
         <label htmlFor='username'></label>
         <input
+          typ='text'
           value={user}
           placeholder='Enter a username'
           onChange={(ev) => setUser(ev.target.value)}
