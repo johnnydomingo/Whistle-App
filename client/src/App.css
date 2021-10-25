@@ -35,3 +35,20 @@ body {
 .navbar li:hover{
   background-color: navy;
 }
+.hamburger {
+  position: absolute;
+  top: 8px;
+  bottom: 16px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+.hamburger .line {
+  height: 2.5px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
