@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
-  const hamburger = () => {
-    
-  }
+  // const hamburger = () => {
+
+  // }
 
 
   return (

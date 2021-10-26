@@ -7,7 +7,7 @@ import { Redirect, useParams } from 'react-router-dom';
 
 const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Whistles?api_key=keyjukEQxfYibCtcU';
 
-const NewPost = ({ props, toggleFetch, setToggleFetch}) => {
+const NewPost = ({ currentUser, toggleFetch, setToggleFetch}) => {
   const [post, setPost] = useState('');
   const [username, setUsername] = useState('');
   // const [redirectFeed, setRedirectFeed] = useState(false);
@@ -15,6 +15,8 @@ const NewPost = ({ props, toggleFetch, setToggleFetch}) => {
   
   const handlePostRequest = async (ev) => {
     ev.preventDefault();
+    setUsername(currentUser);
+
     
     
   
@@ -24,7 +26,8 @@ const NewPost = ({ props, toggleFetch, setToggleFetch}) => {
         
         'fields': {
           'username': username,
-          'post': post
+          'post': post,
+          'Users': currentUser.id
         }
       }]
     }
@@ -41,12 +44,12 @@ const NewPost = ({ props, toggleFetch, setToggleFetch}) => {
     <div>
       <Box>
       <form onSubmit={handlePostRequest}>
-        {/* <label htmlFor='username' />
-        <input type='text' placeholder='Username' onChange={(ev) => setUsername(ev.target.value)}/> */}
-          {/* <fieldset> */}
+        <label htmlFor='username' />
+        <input type='text' placeholder='Username' onChange={(ev) => setUsername(ev.target.value)}/>
+          
           <TextField
           fullWidth
-          style= {{ alignItems: 'center', paddingLeft: '15px', paddingRight: '15px' }}
+          style= {{ alignItems: 'center', paddingLeft: '150px', paddingRight: '150px', paddingTop:'70px' }}
           id='post'
           type='textbox'
           multiline
@@ -60,7 +63,7 @@ const NewPost = ({ props, toggleFetch, setToggleFetch}) => {
             
             type='submit'>Whistle!
             </Button> 
-           {/* </fieldset>  */}
+          
         </form>
         </Box>
     </div>

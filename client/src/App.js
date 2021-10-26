@@ -59,13 +59,15 @@ document.title = "Whistle!";
         </Route>
         <Route path='/feed'>
         <NewPost
-            formType={'post'}
+          formType={'post'}
+          currentUser={currentUser}
             toggleFetch={toggleFetch}
             setToggleFetch={setToggleFetch}
           />
           {whistles.map((whistle) => (
             <Feed
               key={whistle.id}
+              currentUser={currentUser}
               whistleData={whistle}
               toggleFetch={toggleFetch}
               setToggleFetch={setToggleFetch}
