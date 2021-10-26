@@ -58,6 +58,7 @@ body {
   background-color: white;
   border-radius: 10px;
 }
+
 @media (max-width: 500px) {
   .hamburger {
     display: flex;

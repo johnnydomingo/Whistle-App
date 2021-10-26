@@ -7,9 +7,9 @@ import About from './components/About.js';
 import Nav from './components/Nav.js';
 import NewPost from './components/NewPost.js';
 import Footer from './components/Footer.js';
-// import Button from 'Button/@mui/material';
 import './Home.css';
 import './Footer.css';
+import './About.css';
 
 
 import './App.css';
