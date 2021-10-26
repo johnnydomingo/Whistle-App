@@ -5,23 +5,23 @@ import Button from '@mui/material/Button';
 
 const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Users?api_key=keyjukEQxfYibCtcU';
 
-const Home = ({ setCurrentUser, toggleFetch, setToggleFetch}) => {
-  const [user, setUser] = useState('');
-  const handleSubmit = async (ev) => {
-    ev.preventDefault();
-    setCurrentUser(user);
+const Home = () => {
+  // const [user, setUser] = useState('');
+  // const handleSubmit = async (ev) => {
+  //   ev.preventDefault();
+  //   setCurrentUser(user);
 
-    const newUsername = {
-      'records': [{
-        'fields': {
-          'username': user
-        }
-      }]
-    }
-    await axios.post(API_URL, newUsername);
+  //   const newUsername = {
+  //     'records': [{
+  //       'fields': {
+  //         'username': user
+  //       }
+  //     }]
+  //   }
+  //   await axios.post(API_URL, newUsername);
     
-    setToggleFetch(!toggleFetch);
-  }
+  //   setToggleFetch(!toggleFetch);
+  // }
   return (
     <div>
       {/* <div>

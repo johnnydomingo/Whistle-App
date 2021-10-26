@@ -53,6 +53,7 @@ const NewPost = ({ currentUser, toggleFetch, setToggleFetch}) => {
           onChange={(ev) => setPost(ev.target.value)}
           />
           <Button
+            style={{ marginTop: '40px', fontSize: '20px', width: '130px',backgroundColor: '#89aae6',color: 'white'}}
             type='submit'>Whistle!
           </Button> 
         </form>

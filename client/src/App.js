@@ -7,6 +7,7 @@ import About from './components/About.js';
 import Nav from './components/Nav.js';
 import NewPost from './components/NewPost.js';
 import Footer from './components/Footer.js';
+import DarkMode from './components/DarkMode.js';
 import './Home.css';
 import './Footer.css';
 import './About.css';
