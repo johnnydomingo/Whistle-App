@@ -13,7 +13,8 @@ const Feed = ({ whistleData }) => {
       <Box m={2} pt={3} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Card sx={{ minWidth: 400, maxWidth: 400, minHeight: 100 }} style={{backgroundColor: '#ef798a', textAlign: 'center'}} >
         <CardContent>
-          <Typography sx={{fontSize: 20}} color='white' gutterBottom><h4>{whistleData?.fields.username}</h4>
+            <Typography sx={{ fontSize: 20 }} color='white' gutterBottom>
+              <h4>{whistleData?.fields.username}</h4>
           </Typography>
           <Typography sx={{fontSize: 16}} color='white'>
             {whistleData?.fields.post}
