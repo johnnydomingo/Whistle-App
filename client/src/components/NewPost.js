@@ -12,15 +12,10 @@ const NewPost = ({ currentUser, toggleFetch, setToggleFetch}) => {
   const [username, setUsername] = useState('');
   // const [redirectFeed, setRedirectFeed] = useState(false);
 
-  
   const handlePostRequest = async (ev) => {
     ev.preventDefault();
     setUsername(currentUser);
-
-    
-    
   
-    
     const newWhistle = {
       'records': [{
         
@@ -46,7 +41,6 @@ const NewPost = ({ currentUser, toggleFetch, setToggleFetch}) => {
       <form onSubmit={handlePostRequest}>
         <label htmlFor='username' />
         <input type='text' placeholder='Username' onChange={(ev) => setUsername(ev.target.value)}/>
-          
           <TextField
           fullWidth
           style= {{ alignItems: 'center', paddingLeft: '150px', paddingRight: '150px', paddingTop:'70px' }}
@@ -58,12 +52,9 @@ const NewPost = ({ currentUser, toggleFetch, setToggleFetch}) => {
           placeholder='Share something...'
           onChange={(ev) => setPost(ev.target.value)}
           />
-
           <Button
-            
             type='submit'>Whistle!
-            </Button> 
-          
+          </Button> 
         </form>
         </Box>
     </div>

@@ -10,8 +10,7 @@ import Footer from './components/Footer.js';
 import './Home.css';
 import './Footer.css';
 import './About.css';
-
-
+import './NewPost.css';
 import './App.css';
 
 
