@@ -9,6 +9,7 @@ import NewPost from './components/NewPost.js';
 import Footer from './components/Footer.js';
 // import Button from 'Button/@mui/material';
 import './Home.css';
+import './Footer.css';
 
 
 import './App.css';

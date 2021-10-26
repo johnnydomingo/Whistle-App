@@ -24,11 +24,11 @@ const Home = ({ setCurrentUser, toggleFetch, setToggleFetch}) => {
   }
   return (
     <div>
-      <div>
+      {/* <div>
         <h1>Welcome to Whistle!</h1>
-      </div>
-      <div className='logo'>
-        <img src='https://i.imgur.com/4whjMuV.png'></img>
+      </div> */}
+      <div>
+        <img className='image' src='https://i.imgur.com/4whjMuV.png'></img>
       </div>
 
       

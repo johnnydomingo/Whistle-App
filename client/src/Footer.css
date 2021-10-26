@@ -1,0 +1,18 @@
+.footer {
+  margin: auto;
+  height: 30px;
+  padding-bottom: 20px;
+}
+em {
+  display:block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  display:block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+}
