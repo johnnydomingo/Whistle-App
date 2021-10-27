@@ -3,10 +3,10 @@ import { useState } from 'react';
 
 
 const Nav = () => {
-  const [click, setClick] = useState(true);
-  // const [menu, setMenu] = useState(false);
+  // const [click, setClick] = useState(true);
+  // // const [menu, setMenu] = useState(false);
 
-  const handleClick = () => setClick(!click);
+  // const handleClick = () => setClick(!click);
   
   // const showMenu = () => {
   //   if (window.innerWidth > 501) {
@@ -21,13 +21,13 @@ const Nav = () => {
         <div
           className='brand-name'>Whistle
         </div>
-          {click ? window.innerWidth > 501 &&
-          // click is true OR window is larger than 500px
-          <div href='#' className='hamburger' onClick={handleClick}>
+          {/* {click ? window.innerWidth > 501 && */}
+          {/* // click is true OR window is larger than 500px */}
+          <div href='#' className='hamburger'>
+            {/* <span className='line'></span>
             <span className='line'></span>
-            <span className='line'></span>
-            <span className='line'></span>
-          </div> : <div className='links'>
+            <span className='line'></span> */}
+          </div>  <div className='links'>
             {/* {menu && showMenu} */}
             <ul>
               <li>
@@ -46,7 +46,8 @@ const Nav = () => {
                 </a>
               </li>
             </ul>
-          </div> }
+            </div>
+          {/* </div> } */}
       </nav>
     </div>
   )

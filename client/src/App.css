@@ -55,7 +55,7 @@ body {
 .links li:hover{
   background-color: #ac80a0;
 }
-.hamburger {
+/* .hamburger {
   position: absolute;
   top: 8px;
   right: 16px;
@@ -64,17 +64,17 @@ body {
   justify-content: space-between;
   width: 30px;
   height: 21px;
-}
-.hamburger .line {
+} */
+/* .hamburger .line {
   height: 3px;
   width: 100%;
   background-color: white;
   border-radius: 10px;
-}
+} */
 @media (max-width: 500px) {
-  .hamburger {
+  /* .hamburger {
     display: flex;
-  }
+  } */
   .links {
     display: block;
     width: 100%;
@@ -87,17 +87,17 @@ body {
     width: 100%;
     flex-direction: column;
   }
-  .newMenu {
+  /* .newMenu {
     text-align: center;
-  }
+  } */
   .links li {
     text-align: center;
   }
   .links li a {
     padding: 5px;
   }
-  .links.active {
+  /* .links.active {
     display: flex;
-  }
+  } */
 }
 
