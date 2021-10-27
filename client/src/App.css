@@ -6,7 +6,23 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fef2f7;
+  animation: 10000ms ease-in-out infinite color-change;
+  /* background-color: #fef2f7; */
+}
+@keyframes color-change{
+  0% {
+    background-color: #e4c0cf;
+  }
+  33% {
+    background-color: #bfd7ea;
+  }
+  66% {
+    background-color: #f9dbbd;
+  }
+  100% {
+    background-color: #B6B8D6;
+    
+  }
 }
 .navbar {
   display: flex;
