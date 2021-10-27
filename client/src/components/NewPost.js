@@ -38,7 +38,7 @@ const NewPost = ({ currentUser, toggleFetch, setToggleFetch}) => {
   return (
     <div>
       <div className='intructions'>
-        <i>Simply enter a username and starting whistling ☺ </i>
+        <i> How to use: Simply enter a username and starting whistling ☺ </i>
       </div>
       <Box>
       <form onSubmit={handlePostRequest}>
@@ -50,7 +50,7 @@ const NewPost = ({ currentUser, toggleFetch, setToggleFetch}) => {
           id='post'
           type='textbox'
           multiline
-          rows={5}
+          rows={4}
           varient='filled'
           placeholder='Share something...'
           onChange={(ev) => setPost(ev.target.value)}
