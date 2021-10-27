@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+form {
+  text-align: center;
+}
 i {
   display: block;
   font-size: 20px;
@@ -7,10 +10,13 @@ i {
   margin-top: 4rem;
   margin-bottom: -3rem;
 }
+.username {
+  text-align: center;
+}
 input {
   text-align: center;
   margin-top: 5rem;
-  height: 50px;
+  height: 40px;
   margin-bottom: -70px;
   background-color: transparent;
   border-color: white;

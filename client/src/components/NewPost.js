@@ -40,9 +40,11 @@ const NewPost = ({ currentUser, toggleFetch, setToggleFetch}) => {
         <i> How to use: Simply enter a username and starting whistling ☺ </i>
       </div>
       <Box>
-      <form onSubmit={handlePostRequest}>
-        <label htmlFor='username' />
-        <input type='text' placeholder='Username' onChange={(ev) => setUsername(ev.target.value)}/>
+        <form onSubmit={handlePostRequest}>
+          <div className='username'>
+            <label htmlFor='username' />
+            <input type='text' placeholder='Username' onChange={(ev) => setUsername(ev.target.value)}/>
+          </div>
           <TextField
           fullWidth
           style= {{ alignItems: 'center', paddingLeft: '150px', paddingRight: '150px', paddingTop:'70px' }}
@@ -55,7 +57,8 @@ const NewPost = ({ currentUser, toggleFetch, setToggleFetch}) => {
           onChange={(ev) => setPost(ev.target.value)}
           />
           <Button
-            style={{ marginTop: '40px', fontSize: '20px', width: '130px',backgroundColor: '#89aae6',color: 'white'}}
+            className='button'
+            style={{ marginTop: '40px', fontSize: '20px', width: '115px', backgroundColor: '#89aae6', color: 'white', alignItems: 'center' }}
             type='submit'>Whistle!
           </Button> 
         </form>

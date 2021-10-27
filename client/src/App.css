@@ -99,8 +99,18 @@ body {
   /* .links.active {
     display: flex;
   } */
+  i {
+    font-size: 18px;
+  }
   .image {
     max-width: 70%;
+  }
+  .about-me {
+    font-size: 15px;
+  }
+  
+  em {
+    font-size: 12px;
   }
 }
 

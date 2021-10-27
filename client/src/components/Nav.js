@@ -28,8 +28,8 @@ const Nav = () => {
     <div>
       <nav className='navbar'>
         <div>
-          {/* <button className='brand-name' onClick={this.playVibes}>Whistle</button> */}
-          <source></source>
+          <h4 className='brand-name'>Whistle</h4>
+          
         </div>
           {/* {click ? window.innerWidth > 501 && */}
           {/* // click is true OR window is larger than 500px */}
@@ -58,7 +58,6 @@ const Nav = () => {
               </li>
             </ul>
             </div> 
-          {/* </div>  */}
       </nav>
     </div>
   )
