@@ -99,5 +99,8 @@ body {
   /* .links.active {
     display: flex;
   } */
+  .image {
+    max-width: 70%;
+  }
 }
 

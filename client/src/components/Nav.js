@@ -1,6 +1,6 @@
-// import { Link } from 'react-router-dom';
-// import { Component } from 'react';
-// import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Component } from 'react';
+import { useState } from 'react';
 
 
 const Nav = () => {
@@ -38,9 +38,9 @@ const Nav = () => {
             <span className='line'></span>
             <span className='line'></span> */}
           {/* </div>   */}
-          {/* <div className='links'>
-            {/* {menu && showMenu} */}
-            {/* <ul>
+          <div className='links'>
+            {/* {menu && showMenu}  */}
+            <ul>
               <li>
                 <a>
                   <Link to='/home'>Home</Link>
@@ -57,8 +57,8 @@ const Nav = () => {
                 </a>
               </li>
             </ul>
-            </div> */} */}
-          {/* </div> } */}
+            </div> 
+          {/* </div>  */}
       </nav>
     </div>
   )

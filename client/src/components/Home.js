@@ -1,9 +1,9 @@
-// import { Route, Link, Redirect } from 'react-router-dom';
-// import axios from 'axios';
-// import { useState } from 'react';
-// import Button from '@mui/material/Button';
+import { Route, Link, Redirect } from 'react-router-dom';
+import axios from 'axios';
+import { useState } from 'react';
+import Button from '@mui/material/Button';
 
-// const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Users?api_key=keyjukEQxfYibCtcU';
+const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Users?api_key=keyjukEQxfYibCtcU';
 
 const Home = () => {
   // const [user, setUser] = useState('');
@@ -28,7 +28,7 @@ const Home = () => {
         <h1>Welcome to Whistle!</h1>
       </div> */}
       <div>
-        {/* <img className='image' src='https://i.imgur.com/4whjMuV.png'></img> */}
+        <img className='image' src='https://i.imgur.com/4whjMuV.png'></img>
       </div>
 
       <div className='about-me'>

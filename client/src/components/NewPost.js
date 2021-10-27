@@ -3,14 +3,13 @@ import { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-// import { Redirect, useParams } from 'react-router-dom';
+
 
 const API_URL = 'https://api.airtable.com/v0/apph3EMCub9HXZcv5/Whistles?api_key=keyjukEQxfYibCtcU';
 
 const NewPost = ({ currentUser, toggleFetch, setToggleFetch}) => {
   const [post, setPost] = useState('');
   const [username, setUsername] = useState('');
-  // const [redirectFeed, setRedirectFeed] = useState(false);
 
   const handlePostRequest = async (ev) => {
     ev.preventDefault();
