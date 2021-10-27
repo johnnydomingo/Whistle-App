@@ -1,5 +1,13 @@
+i {
+  display: block;
+  
+  text-align: center;
+}
 input {
   margin-top: 5rem;
   height: 50px;
   margin-bottom: -70px;
+  background-color: transparent;
+  border-color: white;
+  border-radius: 5px;
 }

@@ -1,13 +1,12 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Feed from './components/Feed.js';
 import Home from './components/Home.js';
 import About from './components/About.js';
 import Nav from './components/Nav.js';
 import NewPost from './components/NewPost.js';
 import Footer from './components/Footer.js';
-import DarkMode from './components/DarkMode.js';
 import './Home.css';
 import './Footer.css';
 import './About.css';

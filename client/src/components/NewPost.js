@@ -37,6 +37,9 @@ const NewPost = ({ currentUser, toggleFetch, setToggleFetch}) => {
   
   return (
     <div>
+      <div className='intructions'>
+        <i>Simply enter a username and starting whistling ☺ </i>
+      </div>
       <Box>
       <form onSubmit={handlePostRequest}>
         <label htmlFor='username' />

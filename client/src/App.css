@@ -7,20 +7,19 @@ body {
   margin: 0;
   padding: 0;
   animation: 10000ms ease-in-out infinite color-change;
-  /* background-color: #fef2f7; */
 }
 @keyframes color-change{
   0% {
-    background-color: #e4c0cf;
+    background-color: #f5dee8;
   }
   33% {
-    background-color: #bfd7ea;
+    background-color: #c8dced;
   }
   66% {
-    background-color: #f9dbbd;
+    background-color: #c8e6dc;
   }
   100% {
-    background-color: #B6B8D6;
+    background-color: #E8E1EF;
     
   }
 }
