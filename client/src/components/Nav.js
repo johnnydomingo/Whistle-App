@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+// import { Link } from 'react-router-dom';
+// import { Component } from 'react';
+// import { useState } from 'react';
 
 
 const Nav = () => {
@@ -15,21 +16,31 @@ const Nav = () => {
   //     setMenu(true);
   //   }
   // };
+  // class extends Component {
+  //   playVibes() {
+  //     const lofi = document.getElementsByClassName('brand-name')[0]
+  //     lofi.play();
+  //   }
+  // }
+
+
   return (
     <div>
       <nav className='navbar'>
-        <div
-          className='brand-name'>Whistle
+        <div>
+          {/* <button className='brand-name' onClick={this.playVibes}>Whistle</button> */}
+          <source></source>
         </div>
           {/* {click ? window.innerWidth > 501 && */}
           {/* // click is true OR window is larger than 500px */}
-          <div href='#' className='hamburger'>
-            {/* <span className='line'></span>
+          {/* <div href='#' className='hamburger'> */}
+          {/* <span className='line'></span>
             <span className='line'></span>
             <span className='line'></span> */}
-          </div>  <div className='links'>
+          {/* </div>   */}
+          {/* <div className='links'>
             {/* {menu && showMenu} */}
-            <ul>
+            {/* <ul>
               <li>
                 <a>
                   <Link to='/home'>Home</Link>
@@ -42,11 +53,11 @@ const Nav = () => {
               </li>
               <li>
                 <a>
-                  <Link to='/about'>About</Link>
+                  <Link href='.about-me'>About</Link>
                 </a>
               </li>
             </ul>
-            </div>
+            </div> */} */}
           {/* </div> } */}
       </nav>
     </div>
