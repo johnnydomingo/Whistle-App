@@ -8,7 +8,6 @@ body {
   padding: 0;
   background-color: #fef2f7;
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -37,7 +36,6 @@ body {
   color: white;
   padding: 14px; 
   display: block;
-  
 }
 .links li:hover{
   background-color: #ac80a0;
@@ -58,13 +56,12 @@ body {
   background-color: white;
   border-radius: 10px;
 }
-
 @media (max-width: 500px) {
   .hamburger {
     display: flex;
   }
   .links {
-    display: none;
+    display: block;
     width: 100%;
   }
   .navbar {
@@ -74,7 +71,9 @@ body {
   .links ul {
     width: 100%;
     flex-direction: column;
-  
+  }
+  .newMenu {
+    text-align: center;
   }
   .links li {
     text-align: center;
