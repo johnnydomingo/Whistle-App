@@ -59,3 +59,12 @@ Airtable was utilized for this application by having hard-coded usernames and po
 - Utilize PUT and DELETE requests to edit and delete posts from the feed
 - Utilize an emoji package to display in text-field to give the user more options to express themselves
 
+## Project Schedule
+| Day      | Deliverable                                | Status   |
+| -------- | ------------------------------------------ | -------- |
+| Oct 22-24 | Proposal Approval / Airtable Setup        | Complete |
+| Oct 25   | Component Creation / GET, POST Data        | Complete |
+| Oct 26   | Finished Functional Components             | Complete |
+| Oct 27   | Finished CSS for App / MVP                 | Complete |
+| Oct 28   | Linting/CSS Finishing Touches              | Complete |
+| Oct 29   | Presentations                              | Pending  |
