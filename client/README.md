@@ -47,3 +47,15 @@ Airtable was utilized for this application by having hard-coded usernames and po
 }
 ```
 ## MPV
+- Have a working, interact React app
+- Have 6 rendered components for the app
+- Utilize functional components correctly
+- Utilize Axios to render data from Airtable through a GET request and create data in the Airtable through a POST request
+- Style app with CSS and/or a component library; utilize flexbox
+- Have responsive design using a media query for desktop and mobile
+
+### Post-MVP
+- Implement a responsive navbar design
+- Utilize PUT and DELETE requests to edit and delete posts from the feed
+- Utilize an emoji package to display in text-field to give the user more options to express themselves
+
