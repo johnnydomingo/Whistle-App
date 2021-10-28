@@ -8,12 +8,13 @@ em {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 4px;
 }
 a {
-  display:block;
-  text-align: center;
+  display:flex;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5px;
-  padding-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 3px;
 }

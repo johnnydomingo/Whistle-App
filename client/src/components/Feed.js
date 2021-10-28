@@ -19,9 +19,6 @@ const Feed = ({ whistleData }) => {
           <Typography sx={{fontSize: 16}} color='white'>
             {whistleData?.fields.post}
           </Typography>
-        {/* <p>{whistleData?.fields.createdTime}</p> */}
-        {/* gotta figure out this like button */}
-        {/* <button type='submit'>Like</button> */}
         </CardContent>
       </Card>
     </Box>

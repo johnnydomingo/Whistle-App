@@ -25,15 +25,9 @@ const NewPost = ({ currentUser, toggleFetch, setToggleFetch}) => {
         }
       }]
     }
-    // console.log(newWhistle);
     await axios.post(API_URL, newWhistle);
     setToggleFetch(!toggleFetch);
-    // setRedirectFeed(true);
   }
-  // if (redirectFeed) {
-  //     return <Redirect to='/feed'/>
-  //   }
-  
   return (
     <div>
       <div className='intructions'>
