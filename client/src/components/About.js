@@ -1,13 +1,12 @@
 const About = () => {
   return (
     <div>
-      <h5>Switch this out with another logo from Canva</h5>
+      <h5>About me</h5>
       <div className='about-me'>
         <article>
-          Here at Whistle, we aim to create a space for users to share anything on their mind in an instant. While most of our site is still under construction, users are able to make a simple post and view posts from other users in an up-to-date feed. The developers and management of Whistle thank you for being an early user and we are so excited to continue to create a great experience for you!
+         As a newcomer to Software Engineering, Whistle! is my second project utilizing functional components in React. I made this project to exercise my skill and understanding of the methods taught in my course. This project is an excellent baseline to build upon for furture work as I intend to take this application to the next level. In my footer below, please use the icons to be redirected to my LinkedIn and Github profiles. Thanks for stopping by!
         </article>
       </div>
-      <div className='empty'></div>
     </div>
   )
 }

@@ -3,11 +3,7 @@ import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-
-
-
 const Feed = ({ whistleData }) => {
-
   return (
     <div>
       <Box m={2} pt={3} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

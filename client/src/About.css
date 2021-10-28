@@ -1,22 +1,19 @@
+
 h5 {
-  
-  
-  background-color: #694e79;
-  color: #fff;
-  font-size: 28px;
-  padding: 10px 10px 10px 10px;
+  color: black;
+  font-size: 30px;
+  letter-spacing: 3px;
   text-align: center;
-  margin-left: 270px;
-  margin-right: 270px;
-  border-radius: 12px;
+  
 }
 .about-me {
+  display: block;
   background-color: #f7a9a8;
   color: #fff;
   margin-top: 4rem;
   margin-left: 4rem;
   margin-right: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
   text-align: center;
   justify-content: center;
   padding: 30px 25px 30px 20px;
@@ -24,6 +21,3 @@ h5 {
   font-size: 22px;
 }
 
-.empty {
-  padding-top: 180px;
-}
