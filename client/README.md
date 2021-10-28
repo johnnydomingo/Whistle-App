@@ -51,7 +51,7 @@ Airtable was utilized for this application by having hard-coded usernames and po
 - Have 6 rendered components for the app
 - Utilize functional components correctly
 - Utilize Axios to render data from Airtable through a GET request and create data in the Airtable through a POST request
-- Style app with CSS and/or a component library; utilize flexbox
+- Style app with CSS and Material UI; utilize flexbox
 - Have responsive design using a media query for desktop and mobile
 
 ### Post-MVP
@@ -102,3 +102,14 @@ This project is based off the lessons we were taught in React and provides a gre
 ### Threats: 
 
 Time management will also be an issue for me, especially when I run into problems. I tend to spend too much time fixated on a issue before asking for help due to the fact that I prefer to figure things out for myself. In the future, I will need to approach problems by limiting the time I spend on an issue to avoid burnout.
+
+## References
+- https://mui.com/components/text-fields/
+- https://mui.com/components/buttons/
+- https://mui.com/components/cards/
+- Navbar inspiration: https://www.youtube.com/watch?v=At4B7A4GOPg
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date
+- https://stackoverflow.com/questions/10123953/how-to-sort-an-object-array-by-date-property
+- https://css-tricks.com/ease-out-in-ease-in-out/
+- https://stackoverflow.com/questions/43371912/how-to-make-an-html-css-js-color-changing-background-like-kahoot-it-has
+- https://developer.mozilla.org/en-US/docs/Web/CSS/animation

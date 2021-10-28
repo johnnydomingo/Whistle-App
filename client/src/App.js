@@ -40,9 +40,7 @@ document.title = "Whistle!";
     
   });
   
-  
-  return (
-    
+  return (  
       <div>
         <Nav />
         

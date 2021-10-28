@@ -1,13 +1,14 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 h5 {
-  color: black;
+  color: rgb(107, 90, 167);
+  font-family: 'Patrick Hand', cursive;
   font-size: 30px;
   letter-spacing: 3px;
   text-align: center;
   
 }
 .about-me {
-  display: block;
+  display: flex;
   background-color: #f7a9a8;
   color: #fff;
   margin-top: 4rem;
