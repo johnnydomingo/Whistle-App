@@ -84,3 +84,21 @@ Airtable was utilized for this application by having hard-coded usernames and po
 | App Responsiveness | H | 1 hrs| 4 hrs |
 | Linting | H | 1 hrs| 1 hrs |  
 | Total | H | 23hrs| 36 hrs |
+
+## SWOT Analysis 
+
+### Strengths:
+
+I developed a well-rounded understanding of how my application works and how functional components are utilized correctly in React. I am able to think of ideas that embody the topics covered in class to further enhance my understanding of the concepts. 
+
+### Weaknesses:
+
+Although my wireframes do not exactly match my finished product, it is still important to see where changes have been made. I had to recenter my approach and shift away from an initial idea that is beyond my current knowledge. In doing so, I turned this into the strengths above. 
+
+### Opportunities:
+
+This project is based off the lessons we were taught in React and provides a great baseline to build upon in the future. The great thing about this project is that I will be able to embellish the functionality even more as I take my learning to the next level. 
+
+### Threats: 
+
+Time management will also be an issue for me, especially when I run into problems. I tend to spend too much time fixated on a issue before asking for help due to the fact that I prefer to figure things out for myself. In the future, I will need to approach problems by limiting the time I spend on an issue to avoid burnout.
