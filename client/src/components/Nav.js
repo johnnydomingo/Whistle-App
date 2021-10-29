@@ -6,7 +6,6 @@ const Nav = () => {
       <nav className='navbar'>
         <div>
           <h4 className='brand-name'>Whistle</h4>
-          
         </div>
           <div className='links'>
             <ul>
@@ -26,7 +25,7 @@ const Nav = () => {
                 </a>
               </li>
             </ul>
-            </div> 
+          </div> 
       </nav>
     </div>
   )

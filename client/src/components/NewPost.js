@@ -21,7 +21,7 @@ const NewPost = ({ currentUser, toggleFetch, setToggleFetch}) => {
         'fields': {
           'username': username,
           'post': post,
-          'Users': currentUser.id
+          
         }
       }]
     }

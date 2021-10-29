@@ -24,7 +24,6 @@ function App() {
   useEffect(() => {
     const getWhistles = async () => {
       const resp = await axios.get(API_URL);
-      console.log(resp.data);
       setWhistles(resp.data.records);
     }
     getWhistles();
